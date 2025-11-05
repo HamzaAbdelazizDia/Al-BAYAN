@@ -16,31 +16,5 @@ It combines **diacritized text**, **morphological tagging**, **error detection**
 ---
 
 ## 📂 Repository Structure
-el-bayan-arabic-grammar-nlp/
-│
-├── README.md 
-│
-├── data/
-│ ├── raw/ # Original text, textbooks, Quran, news, etc.
-│ ├── processed/ # Cleaned and structured datasets
-│ └── examples/ # Sample data files for contributors
-│
-├── data_structure/
-│ ├── dataset_schema.md # Explanation of each dataset field
-│ ├── grammar_tags.md # List of grammar topics & labels
-│ └── feedback_format.md # Structure of feedback messages
-│
-├── notebooks/
-│ ├── data_cleaning.ipynb
-│ ├── diacritization.ipynb
-│ ├── pos_morphology.ipynb
-│ └── grammar_rule_extraction.ipynb
-│
-├── src/
-│ ├── preprocessing/ # Tokenization, normalization, diacritics
-│ ├── annotation/ # Grammar rule and POS tagging scripts
-│ ├── models/ # Machine learning models (POS, error detection)
-│ ├── feedback/ # Feedback and correction logic
-│ └── utils/ # Helper functions
 
 
