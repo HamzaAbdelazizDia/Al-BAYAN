@@ -1,18 +1,30 @@
-# Dependencies
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Build outputs
-dist/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
 build/
-*.log
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Environment variables
-.env
-.env.local
-.env.*.local
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
 
 # IDE
 .vscode/
@@ -20,8 +32,32 @@ build/
 *.swp
 *.swo
 *~
-
-# OS
 .DS_Store
-Thumbs.db
 
+# OCR System Outputs
+data/images/*/
+data/text_raw/*.txt
+data/text_clean/*.txt
+
+# Keep directory structure
+!data/images/.gitkeep
+!data/text_raw/.gitkeep
+!data/text_clean/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
