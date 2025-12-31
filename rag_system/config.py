@@ -19,11 +19,11 @@ VECTOR_STORE_DIR = BASE_DIR / "vector_store"
 VECTOR_STORE_DIR.mkdir(exist_ok=True)
 
 # ==================== API KEYS ====================
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "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")
-OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+OPENROUTER_BASE_URL = os.getenv("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1")
 
 if not OPENROUTER_API_KEY:
-    print("WARNING: OPENROUTER_API_KEY not set in environment variables")
+    raise ValueError("OPENROUTER_API_KEY environment variable is required. Get one from https://openrouter.ai")
 
 # ==================== EMBEDDING SETTINGS ====================
 EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"  # Free multilingual embedding model

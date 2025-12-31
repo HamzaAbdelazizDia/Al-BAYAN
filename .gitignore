@@ -44,6 +44,12 @@ data/text_clean/*.txt
 !data/text_raw/.gitkeep
 !data/text_clean/.gitkeep
 
+# Environment Variables (NEVER COMMIT)
+.env
+.env.local
+.env.production
+.env*.local
+
 # Logs
 *.log
 logs/
